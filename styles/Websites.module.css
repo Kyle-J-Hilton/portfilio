@@ -1,0 +1,137 @@
+.main {
+    min-height: 100vh;
+    flex: 1;
+    justify-content: center;
+    color: #E9E1D9;
+    align-items: center;
+    background-color: #1b1b1b;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+.container {
+    display: flex; 
+    flex-direction: column;
+    background-color: #1b1b1b;
+  }
+  
+  .pageName {
+    margin-left: 30%;
+  }
+  
+  .header {
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .homeLink {
+    font-size: 1.5rem;
+    color: #E9E1D9;
+    text-decoration: none;
+    margin: 1rem;
+    font-weight: 600;
+  }
+  
+  .homeLink:hover {
+    color: #CF5D48;
+  }
+  
+  
+  .websitesContainer {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+
+  .websitesContainer a {
+     color: #CF5D48;
+     text-decoration: none;
+     font-size: 1.25rem;
+  }
+  
+  #stakingCard {
+    background-image: url('../public/Images/stakingImg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  #rafflesCard {
+    background-image: url('../public/Images/rafflesImg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  #maysonCard {
+    background-image: url('../public/Images/maysonPortfolioImg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  #jammingCard {
+    background-image: url('../public/Images/jammingImg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  #fetchCard {
+    background-image: url('../public/Images/fetchImg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  
+  .websiteCard {
+    display: flex;
+    height: 200px;
+    text-align: left;
+    color: #E9E1D9;
+    text-decoration: none;
+    border: 1px solid #F1B257;
+    border-radius: 15px;
+    box-shadow: 7px 7px #4f4f4f;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+    max-height: 300px;
+    transition: .2s ease-out;
+  }
+  
+  .websiteCard:hover,
+  .websiteCard:focus,
+  .websiteCard:active {
+    color: #a5ccfa;
+    border: 3px solid #0070f3;
+    background-color: #a2a2a2;
+    background-position: left;
+  }
+  
+  .websiteCard h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .websiteCard p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  } 
+  
+  .outterCardContainer {
+    border: 1px solid #F1B257;
+    background-color: #4f4f4f;;
+    border-radius: 15px;
+    width: 308px;
+    margin: 1rem;
+  }
+  
+
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Humble_Lettering;
+    src: url('../public/Humble_Lettering.ttf');
+  }
+
+  @font-face {
+    font-family: IceCreamPartySolid;
+    src: url('../public/IceCreamPartySolid.ttf');
+  }
+
+.container {
+    
+    padding: 0 2rem;
+    height: 600px;
+    background-color: rgb(198, 198, 198);
+    background-image: url('../public/Images/aboutMe.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: blue;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header a {
+    color: yellow;
+    margin: 33.5px;
+  }
+
+  .leftContainer {
+    height: 100%;
+    width: 50%;
+  }
+
+   .businessCard {
+      font-size: 15px;
+      font-family: 'Humble_Lettering', sans-serif;
+   }
+
+  .rightContainer {
+    height: 100%;
+    width: 50%;
+    margin-left: 35%;
+  }
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #eded81;
+      background-color: #FFFF88;
+      box-shadow: 6px 8px 4px 2px #3c3c3c57;
+      height: 200px;
+      width: 200px;
+     
+  }
+
+  #box1{
+   font-size: 8px;
+   font-family: 'Humble_Lettering', sans-serif;
+   margin: -100px 0 0 150px;
+   transform: rotate(20deg);
+  
+   z-index: 1;
+  }
+
+  #box2{
+    font-size: 18px; 
+   
+    margin: -75px 0 0 300px;
+    transform: rotate(-15deg);
+    z-index: 9;
+  }
+
+  #box3{
+    font-size: 10px; 
+    margin: -125px 0 0 50px;
+    transform: rotate(2deg);
+    z-index: 4;
+  }
+
+  .languageLists {
+      font-size: 9px;
+      justify-content: space-between;
+      align-content: space-between;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .iconList {
+    font-size: 25px;
+    margin-top: -5px;
+  }
+
+  .list {
+    font-size: 12px;
+  }

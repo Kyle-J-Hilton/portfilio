@@ -12,9 +12,9 @@
 
   .container {
     padding: 0 2rem;
-    height: 600px;
+    
     background-color: rgb(198, 198, 198);
-  
+   
   }
 
   .header {
@@ -34,6 +34,7 @@
   .leftContainer {
     height: 100%;
     width: 50%;
+    
   }
 
    .businessCard {
@@ -45,13 +46,13 @@
     height: 100%;
     width: 50%;
     margin-left: 35%;
+ 
   }
 
   .box {
       display: flex;
       flex-direction: column;
       border: 1px solid #eded81;
-      background-color: #FFFF88;
       box-shadow: 6px 8px 4px 2px #3c3c3c57;
       height: 200px;
       width: 200px;
@@ -61,17 +62,27 @@
   #box1{
    font-size: 8px;
    font-family: 'Humble_Lettering', sans-serif;
- 
+   background-image: url('../public/Images/lxpic.jpg');
+   background-repeat: no-repeat;
+   background-position: 50% 0;
+   background-size: cover;
+   z-index: 1;
   }
 
   #box2{
     font-size: 18px; 
-   
+    background-image: url('../public/Images/surfpic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
   }
 
   #box3{
     font-size: 20px; 
-  
+    background-image: url('../public/Images/nccpic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
   }
 
   .languageLists {
@@ -95,6 +106,7 @@
 
   .list {
     font-size: 12px;
+    
   }
 }
 
@@ -105,10 +117,7 @@
     padding: 0 2rem;
     height: 600px;
     background-color: rgb(198, 198, 198);
-    background-image: url('../public/Images/aboutMe.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
+    
   }
 
   .header {
@@ -133,6 +142,7 @@
    .businessCard {
       font-size: 15px;
       font-family: 'Humble_Lettering', sans-serif;
+      margin-top: -45px;
    }
 
   .rightContainer {
@@ -145,7 +155,7 @@
       display: flex;
       flex-direction: column;
       border: 1px solid #eded81;
-      background-color: #FFFF88;
+  
       box-shadow: 6px 8px 4px 2px #3c3c3c57;
       height: 200px;
       width: 200px;
@@ -155,31 +165,39 @@
   #box1{
    font-size: 8px;
    font-family: 'Humble_Lettering', sans-serif;
-   margin: -100px 0 0 150px;
+   margin: -450px 0 0 150px;
    transform: rotate(20deg);
-  
+   background-image: url('../public/Images/lxpic.jpg');
+   background-repeat: no-repeat;
+   background-position: 50% 0;
+   background-size: cover;
    z-index: 1;
   }
 
   #box2{
     font-size: 18px; 
-   
+    background-image: url('../public/Images/surfpic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
     margin: -75px 0 0 300px;
     transform: rotate(-15deg);
     z-index: 9;
   }
 
-  #box3{
+  #box3 {
     font-size: 10px; 
     margin: -125px 0 0 50px;
     transform: rotate(2deg);
-    z-index: 4;
+    background-image: url('../public/Images/nccpic.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
   }
 
   .languageLists {
       font-size: 9px;
-      justify-content: space-between;
-      align-content: space-between;
+      
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -191,11 +209,21 @@
   }
 
   .iconList {
-    font-size: 25px;
-    margin-top: -5px;
+    font-size: 35px;
+    margin-right: 10px;
   }
 
   .list {
-    font-size: 12px;
+    font-size: 18px; 
+    margin-top: 40px;
+    
+  }
+
+  .paragraph {
+    width: 75%;
+  }
+
+  .icon {
+    font-size: 40px;
   }
 }

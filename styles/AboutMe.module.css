@@ -8,7 +8,102 @@
     src: url('../public/IceCreamPartySolid.ttf');
   }
 
-.container {
+@media (max-width: 400px) {
+
+  .container {
+    padding: 0 2rem;
+    height: 600px;
+    background-color: rgb(198, 198, 198);
+    background-image: url('../public/Images/graffitiguy.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: blue;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header a {
+    color: yellow;
+    margin: 33.5px;
+  }
+
+  .leftContainer {
+    height: 100%;
+    width: 50%;
+  }
+
+   .businessCard {
+      font-size: 15px;
+      font-family: 'Humble_Lettering', sans-serif;
+   }
+
+  .rightContainer {
+    height: 100%;
+    width: 50%;
+    margin-left: 35%;
+  }
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #eded81;
+      background-color: #FFFF88;
+      box-shadow: 6px 8px 4px 2px #3c3c3c57;
+      height: 200px;
+      width: 200px;
+     
+  }
+
+  #box1{
+   font-size: 8px;
+   font-family: 'Humble_Lettering', sans-serif;
+ 
+  }
+
+  #box2{
+    font-size: 18px; 
+   
+  }
+
+  #box3{
+    font-size: 20px; 
+  
+  }
+
+  .languageLists {
+      font-size: 9px;
+      justify-content: space-between;
+      align-content: space-between;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .iconList {
+    font-size: 25px;
+    margin-top: -5px;
+  }
+
+  .list {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 401px) {
+
+  .container {
     
     padding: 0 2rem;
     height: 600px;
@@ -106,3 +201,4 @@
   .list {
     font-size: 12px;
   }
+}

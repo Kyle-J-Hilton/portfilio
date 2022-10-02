@@ -14,10 +14,7 @@
     padding: 0 2rem;
     height: 600px;
     background-color: rgb(198, 198, 198);
-    background-image: url('../public/Images/graffitiguy.png');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
+  
   }
 
   .header {

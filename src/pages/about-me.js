@@ -81,16 +81,7 @@ export default function p5js() {
           </div>
           <div className={styles.box} id={styles.box3}>
             <h3>Contact Me</h3>
-            <form className={styles.form}>
-              <label>
-                Name:
-                <input type="text" name="name" />
-              </label>
-              <label>
-                Email:
-                <input type="text" name="email" />
-              </label>
-            </form>
+            
             <a href="https://www.linkedin.com/in/kyle-hilton-27a1b2199/">
               {" "}
               <FaLinkedin className={styles.iconList} />

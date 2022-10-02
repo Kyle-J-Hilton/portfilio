@@ -83,7 +83,7 @@ export default function p5js() {
             id={styles.fourteen}
           ></a>
           <a
-            href="/p5js_projects/Bevel_goldfish/single_sketch.html"
+            href="https://github.com/Kyle-J-Hilton/p5.js"
             className={styles.gridItem}
             id={styles.fifteen}
           >

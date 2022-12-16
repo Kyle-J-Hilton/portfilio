@@ -87,7 +87,7 @@ export default function websites() {
             <a
               href="https://github.com/Kyle-J-Hilton/fetch-frontend-takehome"
               className={styles.websiteCard}
-              id={styles.jammingCard}
+              id={styles.fetchRegistrationCard}
             ></a>
           </div>
           <div className={styles.outterCardContainer}>

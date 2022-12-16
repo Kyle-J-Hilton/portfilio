@@ -77,6 +77,20 @@ export default function websites() {
             ></a>
           </div>
           <div className={styles.outterCardContainer}>
+            <h3>Fetch User Registration Form</h3>
+            <p>
+              This app is a user registration form made with creat-react-app. 
+            </p>
+            <a href="https://github.com/Kyle-J-Hilton/fetch-frontend-takehome">
+              View Github Repository
+            </a>
+            <a
+              href="https://github.com/Kyle-J-Hilton/fetch-frontend-takehome"
+              className={styles.websiteCard}
+              id={styles.jammingCard}
+            ></a>
+          </div>
+          <div className={styles.outterCardContainer}>
             <h3>Fetch Rewards Coding test</h3>
             <p>This webpage was for a test and had a 4 hour time limit</p>
             <a href="https://github.com/Kyle-J-Hilton/fetch_rewards_coding_exercise">

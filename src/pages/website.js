@@ -27,7 +27,7 @@ export default function websites() {
             <a
               href="https://christina-maria-designs.vercel.app/"
               className={styles.websiteCard}
-              id={styles.cmDesingsCard}
+              id={styles.cmDesignsCard}
             ></a>
           </div>
           <div className={styles.outterCardContainer}>

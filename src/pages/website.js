@@ -19,6 +19,18 @@ export default function websites() {
         </div>
         <div className={styles.websitesContainer}>
           <div className={styles.outterCardContainer}>
+            <h3>Christina Maria Designs</h3>
+            <p>
+              Ecommerce website selling fine art, custom jewelry, and vintage accessories. Made with Next.js deployed with Vercel
+            </p>
+            
+            <a
+              href="https://christina-maria-designs.vercel.app/"
+              className={styles.websiteCard}
+              id={styles.cmDesingsCard}
+            ></a>
+          </div>
+          <div className={styles.outterCardContainer}>
             <h3>Cha Cha Vans NFTs staking site</h3>
             <p>
               Cha Cha Vans hired me to make this site where users can stake

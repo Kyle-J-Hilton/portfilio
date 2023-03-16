@@ -47,6 +47,13 @@
      text-decoration: none;
      font-size: 1.25rem;
   }
+    
+   #cmDesignsCard {
+    background-image: url('../public/Images/cmDesigns.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
   
   #stakingCard {
     background-image: url('../public/Images/stakingImg.png');

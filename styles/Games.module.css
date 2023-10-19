@@ -1,10 +1,10 @@
 @font-face {
   font-family: IceCreamPartySolid;
-  src: url('../public/IceCreamPartySolid.ttf');
+  src: url('/IceCreamPartySolid.ttf');
 }
 @font-face {
   font-family: IceCreamParty;
-  src: url('../public/IceCreamParty.ttf');
+  src: url('/IceCreamParty.ttf');
 }
 @media (max-width: 400px) {
   .main {
@@ -19,7 +19,7 @@
 .container {
     display: flex; 
     flex-direction: column;
-    background-image: url('../public/Images/gamesBackgroundXS.png');
+    background-image: url('/Images/gamesBackgroundXS.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -68,14 +68,14 @@
  }
 
   #game1Card {
-    background-image: url('../public/Images/game1img.png');
+    background-image: url('/Images/game1img.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
   }
   
   #gameTwoCard {
-    background-image: url('../public/Images/game1img.png');
+    background-image: url('/Images/game1img.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -169,7 +169,7 @@
 .container {
     display: flex; 
     flex-direction: column;
-    background-image: url('../public/Images/gamesBackground.png');
+    background-image: url('/Images/gamesBackground.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -225,14 +225,14 @@
  }
 
   #game1Card {
-    background-image: url('../public/Images/game1img.png');
+    background-image: url('/Images/game1img.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
   }
   
   #gameTwoCard {
-    background-image: url('../public/Images/p5pong.png');
+    background-image: url('/Images/p5pong.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;

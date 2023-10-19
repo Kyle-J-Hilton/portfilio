@@ -1,20 +1,17 @@
 @font-face {
     font-family: Humble_Lettering;
-    src: url('../public/Humble_Lettering.ttf');
+    src: url('/Humble_Lettering.ttf');
   }
 
   @font-face {
     font-family: IceCreamPartySolid;
-    src: url('../public/IceCreamPartySolid.ttf');
+    src: url('/IceCreamPartySolid.ttf');
   }
 
 @media (max-width: 400px) {
-
   .container {
     padding: 0 2rem;
-    
     background-color: rgb(198, 198, 198);
-   
   }
 
   .header {
@@ -34,7 +31,6 @@
   .leftContainer {
     height: 100%;
     width: 50%;
-    
   }
 
    .businessCard {
@@ -46,7 +42,6 @@
     height: 100%;
     width: 50%;
     margin-left: 35%;
- 
   }
 
   .box {
@@ -56,13 +51,12 @@
       box-shadow: 6px 8px 4px 2px #3c3c3c57;
       height: 200px;
       width: 200px;
-     
   }
 
   #box1{
    font-size: 8px;
    font-family: 'Humble_Lettering', sans-serif;
-   background-image: url('../public/Images/lxpic.jpg');
+   background-image: url('/Images/lxpic.jpg');
    background-repeat: no-repeat;
    background-position: 50% 0;
    background-size: cover;
@@ -71,7 +65,7 @@
 
   #box2{
     font-size: 18px; 
-    background-image: url('../public/Images/surfpic.jpg');
+    background-image: url('/Images/surfpic.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -79,7 +73,7 @@
 
   #box3{
     font-size: 20px; 
-    background-image: url('../public/Images/nccpic.jpg');
+    background-image: url('/Images/nccpic.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -113,11 +107,9 @@
 @media (min-width: 401px) {
 
   .container {
-    
     padding: 0 2rem;
     height: 600px;
     background-color: rgb(198, 198, 198);
-    
   }
 
   .header {
@@ -167,7 +159,7 @@
    font-family: 'Humble_Lettering', sans-serif;
    margin: -450px 0 0 150px;
    transform: rotate(20deg);
-   background-image: url('../public/Images/lxpic.jpg');
+   background-image: url('/Images/lxpic.jpg');
    background-repeat: no-repeat;
    background-position: 50% 0;
    background-size: cover;
@@ -176,7 +168,7 @@
 
   #box2{
     font-size: 18px; 
-    background-image: url('../public/Images/surfpic.jpg');
+    background-image: url('/Images/surfpic.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -189,7 +181,7 @@
     font-size: 10px; 
     margin: -125px 0 0 50px;
     transform: rotate(2deg);
-    background-image: url('../public/Images/nccpic.jpg');
+    background-image: url('/Images/nccpic.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;

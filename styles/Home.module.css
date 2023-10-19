@@ -5,7 +5,7 @@
 .container {
   padding: 0 2rem;
   background-color: rgb(0, 112, 243);
-  background-image: url('../public/Images/grafitiEagle.png');
+  background-image: url('/Images/grafitiEagle.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -191,7 +191,7 @@
   .container {
     padding: 0 2rem;
     background-color: rgb(0, 112, 243);
-    background-image: url('../public/Images/grafitiEagle.png');
+    background-image: url('/Images/grafitiEagle.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;

@@ -18,27 +18,27 @@
          },
          {
             link: "/p5js_projects/lightshow_2/single_sketch.html",
-            imagePath: '../public/Images/bluescreen.png',
+            imagePath: '/Images/lightshow_2.png',
          },
          {
             link: "/p5js_projects/decorousexplanation/single_sketch.html",
-            imagePath: '/Images/periodic_oregono.png',
+            imagePath: '/Images/decorousexplanation.png',
          },
          {
             link: "/p5js_projects/Meteor_aragon/single_sketch.html",
-            imagePath: '/Images/Decorousexplanation.png',
+            imagePath: '/Images/meteor_aragon.png',
          },
          {
             link: "/p5js_projects/Periodic_oregano/single_sketch.html",
-            imagePath: 'Images/meteor_aragon.png',
-         },
-         {
-            link: "/p5js_projects/perlinnoise/single_sketch.html",
             imagePath: '/Images/periodic_oregono.png',
          },
          {
-            link: "/p5js_projects/Periodic_oregano/single_sketch.html",
+            link: "/p5js_projects/perlinnoise/single_sketch.html",
             imagePath: '/Images/perlinnoise.png',
+         },
+         {
+            link: "/p5js_projects/Periodic_oregano/single_sketch.html",
+            imagePath: '/Images/periodic_oregono.png',
          },
          {
             link: "/p5js_projects/save_trees/single_sketch.html",
@@ -46,23 +46,27 @@
          },
          {
             link: "/p5js_projects/white_flowers/single_sketch.html",
-            imagePath: '/Images/Bevel_goldfish.png',
-         },
-         {
-            link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
             imagePath: '/Images/white_flowers.png',
          },
          {
             link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
-            imagePath: '/Images/Bevel_goldfish.png',
+            imagePath: '/Images/bevel_goldfish.png',
          },
          {
             link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
-            imagePath: '/Images/bluescreen.png',
+            imagePath: '/Images/bevel_goldfish.png',
+         },
+         {
+            link: "",
+            imagePath: '',
+         },
+         {
+            link: "",
+            imagePath: '',
          },
          {
             link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
-            imagePath: '/Images/Bevel_goldfish.png',
+            imagePath: '/Images/bevel_goldfish.png',
          },
          {
             link: "https://github.com/Kyle-J-Hilton/p5.js",

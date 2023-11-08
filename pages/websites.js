@@ -7,8 +7,8 @@ export default function Websites() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <Header pageName={'Websites'} />
-        <h3>Websites ive created or worked on</h3>
+        <Header />
+        <h3>Websites ive created as a freelance developer</h3>
         <div className={styles.websitesContainer}>
            <WebsiteCards />
         </div>

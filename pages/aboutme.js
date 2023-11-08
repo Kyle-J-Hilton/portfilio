@@ -10,6 +10,7 @@ import {
   DiNpm,
 } from "react-icons/di";
 import { FaGoogle, FaLinkedin } from "react-icons/fa";
+import Header from "../Components/Header";
 
 export default function AboutMe() {
   return (
@@ -19,17 +20,12 @@ export default function AboutMe() {
         <meta name="description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.header}>
-        <h1 className={styles.pageName}>About Me</h1>
-      </div>
+     
 
       <main className={styles.main}>
+      <Header />
         <div className={styles.leftContainer}>
-          <div className={styles.businessCard}>
-            <p>Kyle James Hilton</p>
-            <p>Software Developer</p>
-            <a href="/">Go back to home page</a>
-          </div>
+       
           <div >
             <h3>Languages and Libraries I Use</h3>
             <div className={styles.languageLists}>

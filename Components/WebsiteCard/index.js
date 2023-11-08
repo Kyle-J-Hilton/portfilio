@@ -10,17 +10,14 @@ const WebsiteCards = () => {
         <div key={index} className={styles.outterCardContainer}>
             <h3>{name}</h3>
             <p>{description}</p>
-            <a
-                href={link}
-                className={styles.websiteCard}
-                style={{
-                    backgroundImage: `url(${imagePath})`,
-                }}
-            >
+            <a 
+                href={link} 
+                className={styles.websiteCard} 
+                style={{ backgroundImage: `url(${imagePath})`}}>   
             </a>
         </div>   
-    )
-});
-return cards;
+        )
+    });
+    return cards;
 }
 export default WebsiteCards;

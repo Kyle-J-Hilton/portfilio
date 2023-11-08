@@ -12,6 +12,9 @@
     flex-direction: column;
     background-color: #1b1b1b;
   }
+  .container h3 {
+   text-align: center;
+  }
   
   .pageName {
     margin-left: 30%;
@@ -38,14 +41,17 @@
   
   .websitesContainer {
     display: flex;
-    justify-items: center;
+  
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 
   .websitesContainer a {
      color: #CF5D48;
      text-decoration: none;
      font-size: 1.25rem;
+    
   }
   
   
@@ -57,23 +63,26 @@
     text-decoration: none;
     border: 1px solid #F1B257;
     border-radius: 15px;
-    box-shadow: 7px 7px #4f4f4f;
-    transition: color 0.15s ease, border-color 0.15s ease;
+    box-shadow: 7px 5px #2a2a2a;
     max-width: 300px;
     max-height: 300px;
-    transition: .2s ease-out;
+    margin-bottom: 7px;
+    margin-top: 0px;
+    margin-left: 0; 
+    transition: margin-bottom 0.2s ease, margin-top 0.2s ease, margin-left 0.3s ease, box-shadow 0.3s ease; 
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover
+    background-size: cover;
   }
   
   .websiteCard:hover,
   .websiteCard:focus,
   .websiteCard:active {
     color: #a5ccfa;
-    border: 3px solid #0070f3;
-    background-color: #a2a2a2;
-    background-position: left;
+    margin-bottom: -2px;
+    margin-left: 6px; 
+    margin-top: 21px;
+    box-shadow: 1px 1px #161616;
   }
   
   .websiteCard h2 {
@@ -91,8 +100,9 @@
     border: 1px solid #F1B257;
     background-color: #4f4f4f;;
     border-radius: 15px;
-    width: 308px;
+    width: 310px;
     margin: 1rem;
+    justify-content: left;
   }
   
 

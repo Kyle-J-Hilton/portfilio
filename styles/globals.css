@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #7d86a1;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -7,17 +8,156 @@ body {
 }
 
 
+#id14, #id15 {
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+#id0 {
+  width: 99%;
+  height: 44%;
+  margin-left: -22%;
+  margin-top: -10%;
+  transform-origin: top left;
+  transform: rotate(1.4deg);
+}
+#id6{
+  width: 90%;
+  height: 84%;
+  margin-left: -22%;
+  margin-top: 20%;
 
-* {
-  box-sizing: border-box;
+  transform-origin: top left;
+  transform: rotate(0.8deg);
+}
+#id12 {
+  width: 83%;
+  height: 48%;
+  margin-left: -24%;
+  margin-top: 48%;
+  transform-origin: top left;
+  transform: rotate(0.6deg);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: rgb(95, 97, 162);
-    background: black;
-  }
+#id5 {
+  width: 88%;
+  height: 46%;
+  margin-left: 5%;
+  margin-top: 10%;
+  max-width: 92%;
+  transform-origin: top right;
+  transform: rotate(-1deg);
+}
+#id11 {
+  width: 88%;
+  height: 80%;
+  margin-top: 20%;
+  margin-left: 9%;
+  
+  transform-origin: top right;
+  transform: rotate(-0.5deg);
+}
+#id17 {
+  width: 90%;
+  margin-left: 12%;
+  height: 48%;
+  margin-top: 34%;
+  transform-origin: top right;
+  transform: rotate(-0.2deg);
+}
+#id4{
+  width: 74%;
+  height: 47%;
+  max-width: 78%;
+  margin-top: 10%;
+  margin-left: -2%;
+  transform-origin: top right;
+  transform: rotate(-0.5deg);
+}
+#id10 {
+  width: 74%;
+  height: 78%;
+  max-width: 78%;
+  margin-top: 20%;
+  margin-left: -1%;
+  
+  transform-origin: top right;
+  transform: rotate(-0.5deg);
+}
+#id3{
+  width: 66%;
+  height: 46%;
+  margin-left: -5%;
+  max-width: 70%;
+  margin-top: 11%;
+  transform-origin: top right;
+  transform: rotate(-0.2deg);
+}
+#id9 {
+  width: 66%;
+  height: 80%;
+  margin-left: -6%;
+  max-width: 70%;
+  margin-top: 18%;
+  
+  transform-origin: top right;
+  transform: rotate(-0.2deg);
+}
+
+#id2{
+  width: 65%;
+  height: 47%;
+  margin-left: -8%;
+  margin-top: 11%;
+  max-width: 68%;
+  transform-origin: top left;
+  transform: rotate(0.3deg);
+}
+#id8 {
+  width: 65%;
+  height: 81%;
+  margin-left: -10%;
+  margin-top: 16%;
+  max-width: 68%;
+  
+  transform-origin: top left;
+  transform: rotate(0.5deg);
+}
+#id16 {
+  width: 75%;
+  height: 47%;
+  max-width: 78%;
+  margin-top: 29%;
+  margin-left: -1%;
+  
+  transform-origin: top right;
+  transform: rotate(-0.4deg);
+}
+#id1{
+  width: 62%;
+  height: 46%;
+  margin-left: 0%;
+  margin-top: 7%;
+  max-width: 68%;
+  transform-origin: top left;
+  transform: rotate(1deg);
+}
+#id7 {
+  width: 62%;
+  height: 78%;
+  margin-left: -3%;
+  margin-top: 16%;
+  max-width: 68%;
+  
+  transform-origin: top left;
+  transform: rotate(1deg);
+}
+#id13 {
+  width: 62%;
+  height: 47%;
+  margin-left: -7%;
+  margin-top: 22%;
+  max-width: 69%;
+  transform-origin: top left;
+  transform: rotate(0.3deg);
 }

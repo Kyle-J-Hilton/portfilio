@@ -30,7 +30,7 @@ const websites =
     },
     {
         name: "Mayson Whipple PhD Portfolio",
-        link: "https://github.com/Kyle-J-Hilton/maysons_portfolio",
+        link: "/maysonwebsite/mayson.html",
         discription: "A PhD student's Portfolio website made with just HTML, CSS, and JS. This site is not currently deployed.",
         styleId: "maysonCard",
         imagePath: '/Images/maysonPortfolioImg.png'

@@ -107,7 +107,7 @@
 @media (min-width: 401px) {
 
   .container {
-    padding: 0 2rem;
+    
     height: 600px;
     background-color: rgb(198, 198, 198);
   }

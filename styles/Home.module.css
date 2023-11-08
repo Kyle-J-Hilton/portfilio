@@ -5,7 +5,7 @@
 .container {
   padding: 0 2rem;
   background-color: rgb(0, 112, 243);
-  background-image: url('/Images/grafitiEagle.png');
+  background-image: url('/Images/bluewave-backgroun.png');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -14,7 +14,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 100%;
   padding: 1rem 0;
   flex: 1;
   justify-content: center;
@@ -58,15 +58,14 @@
 
 .title h1 {
   font-size: 4rem;
-  text-shadow: 2px 2px #F1B257;
-  color: #1b1b1bac;
+ 
+  color: #F1B257;
 }
 
 
 .title p {
   font-size: 2rem;
-  text-shadow: 2px 2px #F1B257;
-  color: #1b1b1bac;
+  color: #F1B257;
 }
 
 
@@ -104,7 +103,7 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: #F1B257;
+  color: #be9b59;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 75px;
@@ -187,74 +186,25 @@
 
 @media (min-width: 401px) {
 
-
   .container {
-    padding: 0 2rem;
-    background-color: rgb(0, 112, 243);
-    background-image: url('/Images/grafitiEagle.png');
+    background-color: rgb(22, 35, 59);
+    background-image: url('/Images/blue-background.png');
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
   }
   
   .main {
-    min-height: 100vh;
-    padding: 1rem 0;
+
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: #e9e1d900;
+    background-color: transparent;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  
-  .footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-  }
-  
-  .title a {
-    color: #0070f3;
-    text-decoration: none;
-  }
-  
-  .title a:hover,
-  .title a:focus,
-  .title a:active {
-    text-decoration: underline;
-  }
-  
-  .title {
-    margin: 0;
-    line-height: 0.5;
-    font-size: 4rem;
-  }
-  
-  .title h1 {
-    font-size: 4rem;
-    text-shadow: 2px 2px #F1B257;
-    color: #1b1b1bac;
-  }
-  
-  
-  .title p {
-    font-size: 2rem;
-    text-shadow: 2px 2px #F1B257;
-    color: #1b1b1bac;
-  }
-  
   
   .title,
   .description {
@@ -278,6 +228,7 @@
   }
   
   .grid {
+    margin-top: 15%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -290,14 +241,14 @@
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
-    color: #F1B257;
+    color: #8eae7d;
     text-decoration: none;
-    border: 1px solid #eaeaea;
-    border-radius: 75px;
-    box-shadow: 10px 10px #4f4f4f;
+  
+   
+    
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 300px;
-    background: linear-gradient(to left, #1b1b1b5b 50%, #335B96 50%) right;
+    background: linear-gradient(to left, #1C163B 50%, #c9aa6be6 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
   }
@@ -305,7 +256,7 @@
   .card:hover,
   .card:focus,
   .card:active {
-    color: #f15a57;
+    color: #e5ecea;
     border-color: #0070f3;
     background-color: #a2a2a2;
     background-position: left;
@@ -327,7 +278,6 @@
     margin-left: 0.5rem;
   }
   
-  
   .gamesrow {
     display: flex;
     align-items: center;
@@ -347,6 +297,70 @@
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 300px;
   }
+
+  .header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-content: center;
+    width: 100vw;
+    background-color: rgba(27, 27, 27, 0);
+  }
+
+  .header h1:hover,
+  .header h1:focus,
+  .header h1:active {
+    color: #e5ecea;
+  }
+  .header p:hover,
+  .header p:focus,
+  .header p:active {
+    color: #e5ecea;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+
+    color: #8eae7d;
+    font-weight: 600;
+  }
+  
+  
+  .header p {
+    font-size: 1.5rem;
+    color: #8eae7d;
+    font-weight: 600;
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(28, 22, 59, 0.9);
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  
+    font-weight: 600;
+    background-color: rgba(28, 22, 59, 0.9);
+  }
+  .navLink {
+    color: #8eae7d;
+  }
+
+  .navLink:hover,
+  .navLink:focus,
+  .navLink3:active {
+    color: #e5ecea;
+  }
+
   
   
   @media (max-width: 600px) {

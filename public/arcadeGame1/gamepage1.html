@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="gamestyles.css">
+        <link rel="stylesheet" href="./gamestyles.css">
         <style>
             *{
                box-sizing: border-box;
@@ -13,6 +13,7 @@
         <title>
             Game Page
         </title>
+        <script type="module" src="./gamepage.js"></script>
     </head>
     <body>
       <div style="
@@ -32,7 +33,7 @@
       </div>
          <!-- red container div -->
   <div style="position: relative; display: inline-block">
-    <a class="linkBackToPortfolio" href="/game-page"> Go back To game room </a>
+
     <h3 class="instructions"><b>W</b><b>A</b><b>S</b><b>D</b>to move <b>z</b>for range attack <b>shift</b> for close attack</h3>
     <!-- smaller red container div -->
     <div
@@ -141,28 +142,28 @@
     "
     >SELECT YOUR FIGHTER</h1>
     <div id="characters">
-      <button type="submit" id="huntress" onclick="choseHuntress()" class="character" style="
-        background-image: url('./img/fighters1.png')">
+      <button type="submit" id="huntress" onclick="chooseHuntress()" class="character" style="
+        background-image: url('/arcadeGame1/modules/img/fighters1.png')">
         <b>H</b><b>U</b><b>N</b><b>T</b><b>R</b><b>E</b><b>S</b><b>S</b><b>2P</b>
       </button>
-      <button type="submit" id="goblin" onclick="choseGoblin()" class="character" style="
-        background-image: url('./img/fighters2.png')">
+      <button type="submit" id="goblin" onclick="chooseGoblin()" class="character" style="
+        background-image: url('/arcadeGame1/modules/img/fighters2.png')">
         <b>G</b><b>O</b><b>B</b><b>L</b><b>I</b><b>N</b><b>1P</b>
       </button>
-      <button type="submit" id="luffy" onclick="choseLuffy()" class="character" style="
-        background-image: url('./img/fighters3.png')">
+      <button type="submit" id="luffy" onclick="chooseLuffy()" class="character" style="
+        background-image: url('/arcadeGame1/modules/img/fighters3.png')">
         <b>P</b><b>I</b><b>R</b><b>A</b><b>T</b><b>E</b><b>1P</b>
       </button>
-      <button type="submit" id="naruto" onclick="choseNaruto()" class="character" style="
-        background-image: url('./img/fighters4.png')">
+      <button type="submit" id="naruto" onclick="chooseNaruto()" class="character" style="
+        background-image: url('/arcadeGame1/modules/img/fighters4.png')">
         <b>N</b><b>I</b><b>N</b><b>J</b><b>A</b><b>1P</b>
       </button>
-      <button type="submit" id="cat" onclick="choseCat()" class="character" style="
-        background-image: url('./img/fighters5.png')">
+      <button type="submit" id="cat" onclick="chooseCat()" class="character" style="
+        background-image: url('/arcadeGame1/modules/img/fighters5.png')">
         <b>C</b><b>A</b><b>T</b><b>1P</b>
       </button>
-      <button type="submit" id="star" onclick="choseStarFire()" class="character" style="
-        background-image: url('./img/fighters6.png')">
+      <button type="submit" id="star" onclick="chooseStarfire()" class="character" style="
+        background-image: url('/arcadeGame1/modules/img/fighters6.png')">
         <b>A</b><b>L</b><b>I</b><b>E</b><b>N</b><b>1P</b>
       </button>
   </div>
@@ -172,7 +173,7 @@
 style="
     display: none;
     background-color: rgb(140, 210, 141);
-    background-image: url('./img/playAgain.png');
+    background-image: url('./modules/img/playAgain.png');
     position: fixed;
     align-items: center;
     width: 1050px;
@@ -183,7 +184,7 @@ style="
     opacity: .9;
   "
 >
-    <button type="submit" id="play" onclick="playAgain()" style="
+    <button type="submit" id="play" onclick="playagain()" style="
         display: inline-block;
         width: 225px;
         height: 100px;
@@ -196,7 +197,7 @@ style="
         margin-top: 320px;
         ">New Game</button>
 
-    <button type="submit" id="playNext" onclick="playNext()" style="
+    <button type="submit" id="playNext" onclick="playnext()" style="
       display: inline-block;
       width: 225px;
       height: 100px;
@@ -212,14 +213,13 @@ style="
 
     <canvas id="canvas"></canvas>
   </div>
+
   <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+  integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
  
-  
-  <script src="./gamepage.js"></script>
     </body>
 </html>

@@ -5,26 +5,24 @@ import { useId } from "react-id-generator";
 
 const P5jsCard = () => {
     const idList = useId(16);
-
-    let idCounter = 1; 
-
+    
     const cards = p5jsAssets.map((info, index) => {
+        
+        
         const { link, imagePath } = info;
-        const uniqueId = `${idList}-${idCounter++}`; 
-       
+        const uniqueId = `id${index}`; // Correct the unique ID assignment
         return (
-                <a
-                    key={index}
-                    href={link}
-                    className={styles.gridItem}
-                    id={styles.uniqueId}
-                    style={{
-                        backgroundImage: `url(${imagePath})`
-                    }}
-                ></a>
+            <a
+                key={index}
+                href={link}
+                className={styles.gridItem}
+                id={uniqueId} 
+                style={{
+                    backgroundImage: `url(${imagePath})`
+                }}
+            ></a>
         );
     });
-
     return cards;
 }
 

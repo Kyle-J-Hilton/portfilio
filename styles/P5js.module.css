@@ -31,14 +31,13 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    background-image: url('/Images/p5jsbackpic.png');
+    background-image: url('/Images/p5jsImg.png');
     background-color: #1b1b1b;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
+    height: 100%;
   }
 
   .gridItem {
@@ -56,31 +55,31 @@
 
   
 
-  #id15 {
+  #id-15 {
     font-family: 'IceCreamParty', sans-serif;  
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 0%;
     background-color: transparent;
   }
-  #id15:hover {
+  #id-15:hover {
     color: gold;
   }
-  #id15 h3 {
+  #id-15 h3 {
     font-size: 36px;
    
   }
-  #id16 {
+  #id-16 {
     font-family: 'IceCreamPartySolid', sans-serif;
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 0%;
     background-color: transparent;
   }
-  #id16:hover {
+  #id-16:hover {
     color: gold;
   }
-  #id16 h3 {
+  #id-16 h3 {
     font-size: 36px;
   }
 
@@ -122,33 +121,40 @@
 
   .gridContainer {
     display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 12% 12% 12% 12% 12%;
-    grid-template-rows: 23% 23% 23% 23%;
-    grid-row-gap: 10px;
-    grid-column-gap: 30px;
-    background-image: url('/Images/p5jsbackpic.png');
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 10% 20% 18% 18% 16% 14%;
+    grid-template-rows: 33% 19% 33%;
+    background-image: url('/Images/p5jsImg.png');
     background-color: #1b1b1b;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    
     width: 100%;
     height: 90vh;
   }
+  
+  .discription {
+    text-align: center;
+  }
 
   .gridItem {
-     height: 15vh;
-     width: 20vh;
-     border: 2px solid rgb(99, 98, 98);
-     border-radius: 2px;
-     background-color: #1b1b1b;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
+     max-height: 16vh;
+     max-width: 32vh;
+     min-height: 12vh;
+     min-width: 10vh;
+     width: 60%;
+     border-radius: 5%;
+     background-color: transparent;
+     background-image: none !important;
+     border: none;
   }
+  .gridItem:hover {
+  
+    border: 4px solid #f1f1f1e3;
+ }
 
   .footer {
     width: 100%;

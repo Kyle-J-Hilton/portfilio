@@ -15,11 +15,7 @@ import Header from "../Components/Header";
 export default function AboutMe() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Kyle Hilton Portfolio</title>
-        <meta name="description" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+   
      
 
       <main className={styles.main}>

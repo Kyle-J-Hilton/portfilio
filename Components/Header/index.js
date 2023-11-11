@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "../../styles/Home.module.css";
 
-const Header = ({pageName}) => {
+const Header = () => {
 
     return (
         <div className={styles.header}>
             <div className={styles.name}>
-                <h1>Kyle J. Hilton</h1>
-                <p>Software Developer</p>
+                <div className={styles.starcontainer}></div>
+                <div className={styles.h1container}>
+                    <h1>Kyle J. Hilton</h1>
+                </div>
             </div>
             <div className={styles.nav}>
                 <a href="/" className={styles.navLink}>

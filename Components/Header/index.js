@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Home.module.css";
+import styles from "../../styles/Header.module.css";
 
 const Header = () => {
 
@@ -8,12 +8,20 @@ const Header = () => {
             <div className={styles.name}>
                 <div className={styles.starcontainer}></div>
                 <div className={styles.h1container}>
-                    <h1>Kyle J. Hilton</h1>
+                    <a href="/" className={styles.homeLink}>
+                        <h1>KJ Hilton Software Development</h1>
+                    </a>
                 </div>
             </div>
             <div className={styles.nav}>
-                <a href="/" className={styles.navLink}>
-                        Home
+                <a href="/contact" className={styles.navLink}>
+                        Contact
+                </a>
+                <a href="/aboutme" className={styles.navLink}>
+                        Info
+                </a>
+                <a href="/websiteAnalysis" className={styles.navLink}>
+                    Website Analysis
                 </a>
                 <a href="/websites" className={styles.navLink}>
                         Websites
@@ -23,9 +31,6 @@ const Header = () => {
                 </a>
                 <a href="/p5js" className={styles.navLink}>
                         Visuals
-                </a>
-                <a href="/aboutme" className={styles.navLink}>
-                        Info/Contact
                 </a>
             </div>
             

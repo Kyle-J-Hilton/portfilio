@@ -8,214 +8,110 @@
     src: url('/IceCreamPartySolid.ttf');
   }
 
-@media (max-width: 400px) {
+
+
   .container {
-    padding: 0 2rem;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 5vh;
     background-color: rgb(198, 198, 198);
+    background-image: url('/Images/icons.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
-  .header {
+  .main {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    color: blue;
-    text-align: center;
-    justify-content: center;
+    height: 95vh;
+    width: 100vw;
+    background-color: #c2c2c2ba;
   }
-
-  .header a {
-    color: yellow;
-    margin: 33.5px;
-  }
+ 
 
   .leftContainer {
     height: 100%;
-    width: 50%;
-  }
-
-   .businessCard {
-      font-size: 15px;
-      font-family: 'Humble_Lettering', sans-serif;
-   }
-
-  .rightContainer {
-    height: 100%;
-    width: 50%;
-    margin-left: 35%;
-  }
-
-  .box {
-      display: flex;
-      flex-direction: column;
-      border: 1px solid #eded81;
-      box-shadow: 6px 8px 4px 2px #3c3c3c57;
-      height: 200px;
-      width: 200px;
-  }
-
-  #box1{
-   font-size: 8px;
-   font-family: 'Humble_Lettering', sans-serif;
-   background-image: url('/Images/lxpic.jpg');
-   background-repeat: no-repeat;
-   background-position: 50% 0;
-   background-size: cover;
-   z-index: 1;
-  }
-
-  #box2{
-    font-size: 18px; 
-    background-image: url('/Images/surfpic.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }
-
-  #box3{
-    font-size: 20px; 
-    background-image: url('/Images/nccpic.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }
-
-  .languageLists {
-      font-size: 9px;
-      justify-content: space-between;
-      align-content: space-between;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-
-  .form {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .iconList {
-    font-size: 25px;
-    margin-top: -5px;
-  }
-
-  .list {
-    font-size: 12px;
-    
-  }
-}
-
-@media (min-width: 401px) {
-
-  .container {
-    
-    height: 600px;
-    background-color: rgb(198, 198, 198);
-  }
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    color: blue;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .header a {
-    color: yellow;
-    margin: 33.5px;
-  }
-
-  .leftContainer {
-    height: 100%;
-    width: 50%;
-  }
-
-   .businessCard {
-      font-size: 15px;
-      font-family: 'Humble_Lettering', sans-serif;
-      margin-top: -45px;
-   }
-
-  .rightContainer {
-    height: 100%;
-    width: 50%;
-    margin-left: 35%;
-  }
-
-  .box {
-      display: flex;
-      flex-direction: column;
-      border: 1px solid #eded81;
-  
-      box-shadow: 6px 8px 4px 2px #3c3c3c57;
-      height: 200px;
-      width: 200px;
-     
-  }
-
-  #box1{
-   font-size: 8px;
-   font-family: 'Humble_Lettering', sans-serif;
-   margin: -450px 0 0 150px;
-   transform: rotate(20deg);
-   background-image: url('/Images/lxpic.jpg');
-   background-repeat: no-repeat;
-   background-position: 50% 0;
-   background-size: cover;
-   z-index: 1;
-  }
-
-  #box2{
-    font-size: 18px; 
-    background-image: url('/Images/surfpic.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    margin: -75px 0 0 300px;
-    transform: rotate(-15deg);
-    z-index: 9;
-  }
-
-  #box3 {
-    font-size: 10px; 
-    margin: -125px 0 0 50px;
-    transform: rotate(2deg);
-    background-image: url('/Images/nccpic.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  }
-
-  .languageLists {
-      font-size: 9px;
-      
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-
-  .form {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .iconList {
-    font-size: 35px;
-    margin-right: 10px;
-  }
-
-  .list {
-    font-size: 18px; 
-    margin-top: 40px;
-    
+    width: 50vw;
   }
 
   .paragraph {
-    width: 75%;
+    width: 40vw;
+    margin-top: 20vh;
+    margin-left: 5vw;
   }
 
-  .icon {
-    font-size: 40px;
+  .paragraph h2{
+    font-size: 3rem;
+    margin-top: 5%;
+    color: #ffffff;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
   }
-}
+
+  .paragraph h3{
+    font-size: 2rem;
+    color: #F1B257;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4f4f4f;
+    font-weight: 600;
+  }
+
+  .paragraph p{
+    font-size: 1rem;
+    color: #F1B257;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #4f4f4f;
+  
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50vw;
+  }
+
+  .list{
+    font-size: 1.5rem;
+    color: #F1B257;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4f4f4f;
+    text-align: center;
+    margin-right: 2vw;
+  }
+
+
+  .languageP {
+   
+    width: 40vw;
+    font-size: 2rem;
+    margin-top: 15vh;
+    color: #ffffff;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
+
+  }
+
+
+  .languageLists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: 600;
+    height: 20vh;
+    width: 100%;
+     
+  }
+
+
+
+
+
+  

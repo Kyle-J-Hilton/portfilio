@@ -1,0 +1,98 @@
+@font-face {
+    font-family: PublicPixel;
+    src: url('/PublicPixel-z84yD.ttf');
+  }
+
+
+  .container {
+    font-family: PublicPixel;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: #6f6f6f;
+  }
+  .contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    align-content: space-between;
+    margin-top: 22vh;
+    margin-left: 5vh;
+  }
+  
+  .contactFormInput{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 75%;
+    height: 80%;
+    margin-bottom: 5vh;
+    background-color: #5f5f5f;
+  }
+
+  .contactFormLabel{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .contactFormButton{
+    background-color: #7f7f7f;
+    font-size: 2rem;
+    color: #7f7f7f;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
+    flex-wrap: wrap;
+    width: 76%;
+    height: 10%;
+  }
+
+  .contactIcons {
+    height: 20vh;
+    width: 100%;
+    margin-top: 2vh;
+    text-decoration: none;
+  }
+
+  .icon {
+    font-size: 3.5rem;
+    margin-left: 18%;
+    color: #F1B257;
+    text-decoration: none;
+  }
+
+  .infoBox{
+    margin-top: 15vh;
+    width: 40vw;
+
+  }
+
+  .infoBoxH3{
+   
+    font-size: 3rem;
+    color: #7f7f7f;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
+    flex-wrap: wrap;
+  
+    width: 100%;
+  }
+
+  .infoBoxP{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    width: 90%;
+  }

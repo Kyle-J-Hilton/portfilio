@@ -2,12 +2,6 @@ import Head from "next/head";
 import styles from "../styles/AboutMe.module.css";
 import {
   DiGithubBadge,
-  DiHtml5,
-  DiJsBadge,
-  DiCss3Full,
-  DiReact,
-  DiPython,
-  DiNpm,
 } from "react-icons/di";
 import { FaGoogle, FaLinkedin } from "react-icons/fa";
 import Header from "../Components/Header";
@@ -15,93 +9,67 @@ import Header from "../Components/Header";
 export default function AboutMe() {
   return (
     <div className={styles.container}>
-   
-     
-
-      <main className={styles.main}>
       <Header />
+      <main className={styles.main}>
+      
         <div className={styles.leftContainer}>
-       
-          <div >
-            <h3>Languages and Libraries I Use</h3>
-            <div className={styles.languageLists}>
-              <dl className={styles.iconList}>
-                <dt>
-                  {" "}
-                  <DiHtml5 />
-                </dt>
-                <dt>
-                  {" "}
-                  <DiCss3Full />
-                </dt>
-                <dt>
-                  {" "}
-                  <DiJsBadge />
-                </dt>
-              </dl>
-              <dl className={styles.iconList}>
-                <dt>
-                  {" "}
-                  <DiPython />
-                </dt>
-                <dt>
-                  {" "}
-                  <DiReact />
-                </dt>
-                <dt>
-                  {" "}
-                  <DiNpm />
-                </dt>
-              </dl>
-              <dl className={styles.list}>
-                <dt> Materials UI</dt>
-                <dt> @solana/web3</dt>
-                <dt> TypeScript</dt>
-                <dt> C++</dt>
-                <dt> storybook</dt>
-              </dl>
+            <div className={styles.paragraph}>
+              <h2>Who am I?</h2>
+              <h3>
+                a Software Developer who specializes in Frontend and Mobile develpment.
+              </h3>
+              <p>
+                5 years combined experience working both freelance and as part of a large team.
+                I began my jorney studying Physics in college. This meade me fall in love with 
+                problem solving. I took this love into coding, and have spent the last five years
+                honing my craft. I have worked for corperations and worked on websites and apps with
+                over seven million users, and I have built projects for small companies looking 
+                to gain some customers with beutiful and using friendly websites.
+             </p>
             </div>
-          </div>
-          <div className={styles.paragraph}>
-            <p>
-              I am a Software Developer who specializes in front-end Dev work. I
-              have learned coding through Codecademy's full-stack Engineering
-              bootcamp, and while studying Physics in college I learned C++.
-            </p>
-          </div>
-          <div>
             
-            <a href="https://www.linkedin.com/in/kyle-hilton-27a1b2199/">
-              {" "}
-              <FaLinkedin className={styles.icon} />
-              
-            </a>
-            <a href="https://github.com/Kyle-J-Hilton">
-              {" "}
-              <DiGithubBadge className={styles.icon} />
-              
-            </a>
-            <a href="https://gmail.com">
-              {" "}
-              <FaGoogle className={styles.icon} />
-              kylehilton18@gmail.com
-            </a>
-          </div>
         </div>
-        
         <div className={styles.rightContainer}>
-          <div className={styles.box} id={styles.box1}>
-            
+            <p className={styles.languageP}> 
+              Over the years I have become an expert 
+              in the following languages and libraries.
+            </p>
+            <div className={styles.languageLists}>
+                <dl className={styles.list}>
+                    <dt> HMTL </dt>
+                    <dt> JavaScript</dt>
+                    <dt> CSS/SCSS</dt>
+                    <dt> React</dt>
+                    <dt> TypeScript</dt>
+                    <dt> React-Native </dt>
+                    <dt> Next.js</dt>
+                    <dt> Spring Boot</dt>
+                </dl>
+                <dl className={styles.list}> 
+                    <dt> Java </dt>
+                    <dt> C++</dt>
+                    <dt> C#</dt>  
+                    <dt> SQL</dt>
+                    <dt> mySQL</dt>
+                    <dt> Node.js</dt>
+                    <dt> Shopify</dt>
+                    <dt> AWS</dt>
+                </dl>
+                <dl className={styles.list}>   
+                    <dt> .NET</dt>
+                    <dt> Eclipse</dt>
+                    <dt> MongoDB</dt>
+                    <dt> CocoaPods</dt>
+                    <dt> UNITY</dt>
+                    <dt> Web3</dt>
+                    <dt> IOS Development/xcode</dt>
+                    <dt> Android Development</dt> 
+                </dl>
+               
+            </div>
+           
           </div>
-          <div className={styles.box} id={styles.box2}>
-            
-          </div>
-          <div className={styles.box} id={styles.box3}>
-            
-          </div>
-        </div>
       </main>
-
       <footer className={styles.footer}></footer>
     </div>
   );

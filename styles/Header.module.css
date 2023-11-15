@@ -1,0 +1,100 @@
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    justify-content: space-between;
+    align-content: center;
+    width: 100vw;
+    background-color: #1b1b1b;
+  }
+
+  .starcontainer {
+    z-index: 9;
+    background-image: url('/Images/Vp3M.gif');
+    height: 12vh;
+    width: 12vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .h1container {
+    width: 25vw;
+  }
+ 
+  .header h1 {
+    font-size: 1.5rem;
+    color: #4f4f4f;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+
+  .header h1:hover,
+  .header h1:focus,
+  .header h1:active {
+    color: #ffffff;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #F1B257;
+  }
+  
+  .header p {
+    font-size: 1.5rem;
+    color: #e5ecea;
+    font-weight: 600;
+  }
+
+  .header a {
+    font-size: 1.2rem;
+    margin-top: 5%;
+    color: #4f4f4f;
+    font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-left: 0vw;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 600;
+    width: 60vw;
+  }
+
+  .navLink {
+    color: #e5ecea;
+    text-decoration: none;
+  }
+  .homeLink{
+    text-decoration: none;
+  }
+
+
+  .navLink:hover,
+  .navLink:focus,
+  .navLink:active {
+    color: #ffffff;
+  }
+
+ 

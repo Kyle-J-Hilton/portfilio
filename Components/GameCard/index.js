@@ -3,16 +3,14 @@ import styles from "../../styles/Games.module.css"
 
 const GameCard = ({name, link}) => {
     return (
-        <div className={styles.outterCardContainer}>
-            <h3>{name}</h3>
-            <a
-                href={link}
-                className={styles.gamesCard}
-            >Play Game</a>
-            <div className={styles.gitHubLink}>
-                <a href="/" >View Github Repository</a>
-            </div>
-            
+        <div className={styles.cardLinks}>
+           
+            <a href={link} className={styles.gitHubLink}>
+            {name}
+            </a>
+            <a className={styles.gitHubLink} href="/" >
+                View Github Repository
+            </a>
         </div>
     );
 };

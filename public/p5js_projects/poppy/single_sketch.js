@@ -6,116 +6,109 @@ let yspeed = [];
 let yspeed2 = [];
 let xposP = [];
 let yposP = [];
-
+let counter = 0;
+let pillRowOffset = 0;
 let t = [];
 
-let numCircle = 4;
+let numCircle = 10; // Increase the number of circles
+
+let pills = []; // Array to store pill positions
 
 function setup() {
-  createCanvas(400, 400);
+  const height = window.innerHeight;
+  const width = window.innerWidth;
+  createCanvas(width - 5, height - 5); // Adjust the canvas size
 
-  for (let i = 0; i < 2; i++) {
-    xpos[i] = random(100, 110);
+  for (let i = 0; i < numCircle; i++) {
+    xpos[i] = 100 + (i * 35); // Adjust the initial x positions
     ypos[i] = 150;
     ypos2[i] = 150;
-    xpos2[i] = random(130, 140);
+    xpos2[i] = 130 + (i * 35); // Adjust the initial x positions for the second set of circles
     t[i] = 0;
   }
 
   for (let i = 0; i < numCircle; i++) {
-    yspeed[i] = random(0.2, 1);
-    yspeed2[i] = random(0.5, 1);
+    yspeed[i] = random(0.1, 0.7); // Decrease the yspeed values
+    yspeed2[i] = random(0.5, 0.9); // Decrease the yspeed2 values
   }
 }
+
 function draw() {
+  
   background(190, 190, 190);
   strokeWeight(0);
+ 
+  // Repeat the entire animation for each circle
+  for (let k = 0; k < numCircle; k++) {
+    //poppy bulb
+    fill(127, 189, 60);
+    ellipse(100 + k * 80, 150, 55, 60);
+    strokeWeight(0.5);
+    stroke(58, 87, 65, 40);
+    ellipse(100 + k * 80, 150, 45, 60);
+    ellipse(100 + k * 80, 150, 35, 60);
+    ellipse(100 + k * 80, 150, 15, 60);
+    fill(127, 189, 60);
+    triangle(85 + k * 80, 125, 90 + k * 80, 125, 76 + k * 80, 120);
+    strokeWeight(2);
+    fill(127, 189, 60);
+    ellipse(100 + k * 80, 124, 28, 6);
+    rect(97 + k * 80, 180, 5, 220);
 
-  //poppy bulb
-  fill(127, 189, 60);
-  ellipse(120, 150, 55, 60);
-  strokeWeight(0.5);
-  stroke(58, 87, 65, 40);
-  ellipse(120, 150, 45, 60);
-  ellipse(120, 150, 35, 60);
-  ellipse(120, 150, 15, 60);
-  fill(127, 189, 60);
-  triangle(105, 125, 110, 125, 96, 120);
-  strokeWeight(2);
-  fill(127, 189, 60);
-  ellipse(120, 124, 28, 6);
-  rect(117, 180, 5, 220);
-
-  for (let i = 0; i < xpos.length; i++) {
+    // Repeat the teardrop animation for each circle
     strokeWeight(0);
     //left teardrop
     fill(242, 172, 162);
-    circle(xpos[i], ypos[i], 10);
-
-    //textSize(10)
-    //text('raindrops',xpos[i]+5,ypos[i]+5)
-    triangle(xpos[i] - 5, ypos[i], xpos[i], ypos[i] - 10, xpos[i] + 5, ypos[i]);
+    circle(xpos[k] + k * 35, ypos[k], 10);
+    triangle(xpos[k] - 5 + k * 35, ypos[k], xpos[k] + k * 35, ypos[k] - 10, xpos[k] + 5 + k * 35, ypos[k]);
 
     //right teardrop
-    circle(xpos2[i], ypos2[i], 10);
     fill(242, 172, 162);
+    circle(xpos2[k] + k * 35, ypos2[k], 10);
     triangle(
-      xpos2[i] - 5,
-      ypos2[i],
-      xpos2[i],
-      ypos2[i] - 10,
-      xpos2[i] + 5,
-      ypos2[i]
-    );
+      xpos2[k] - 5 + k * 35, ypos2[k], xpos2[k] + k * 35, ypos2[k] - 10, xpos2[k] + 5 + k * 35, ypos2[k]);
 
-    if (ypos[i] > height) {
-      ypos[i] = 150;
-      ypos2[i] = 150;
-      t[i] = 1;
+    if (ypos[k] > 389) {
+      ypos[k] = 150;
+      t[k] = 1;
+      pills.push({ x: xpos[k] + k * 35, y: (390 - pillRowOffset) }); // Store pill position 
     }
 
-    if (mouseIsPressed) {
-      //raindrops cease then fall again
-
-      ypos[i] = -600;
+    if (ypos2[k] > 389) {
+      ypos2[k] = 150;
+      t[k] = 1;
+      pills.push({ x: xpos2[k] + k * 35, y: (390 - pillRowOffset) }); 
     }
+
+ 
   }
-
+  
   for (let i = 0; i < yspeed.length; i++) {
     ypos[i] = ypos[i] + yspeed[i];
     ypos2[i] = ypos2[i] + yspeed2[i];
   }
 
-  //pills
+  // Draw and update pill positions
+  
+  for (let i = 0; i < pills.length; i++) {
+   
+    pill(pills[i].x, pills[i].y);
+  }
 
-  pill(100, 390);
-  pill2(130, 390);
+ 
 }
 
 function pill(xposP, yposP) {
-  for (let i = 0; i < xpos.length; i++) {
-    let d = dist(xpos[i], ypos[i], xposP, yposP);
+ 
+  fill("white");
+  strokeWeight(0.1);
+  stroke(163, 19, 0);
+  rect(xposP - 10, (yposP), 15, 10, 4);
+  fill("red");
+  rect(xposP, (yposP), 15, 10, 4);
 
-    if (d < 10) {
-      fill("white");
-      strokeWeight(0.1);
-      stroke(163, 19, 0);
-      rect(xposP - 10, yposP, 15, 10, 4);
-      fill("red");
-      rect(xposP, yposP, 15, 10, 4);
-    }
+  if (counter % 20 === 0) {
+    pillRowOffset = pillRowOffset + 0.005; 
   }
-}
-
-function pill2(xposP2, yposP2) {
-  for (let i = 0; i < xpos.length; i++) {
-    if (dist(xpos2[i], ypos2[i], xposP2, yposP2) < 10) {
-      fill("white");
-      strokeWeight(0.1);
-      stroke(163, 19, 0);
-      rect(xposP2 + 5, yposP2, 15, 10, 4);
-      fill("red");
-      rect(xposP2 + 15, yposP2, 15, 10, 4);
-    }
-  }
+  counter++;
 }

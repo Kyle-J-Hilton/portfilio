@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Websites.module.css";
 import WebsiteCards from "../Components/WebsiteCard";
 import Header from "../Components/Header"
+import Footer from "../Components/Footer";
 
 export default function Websites() {
   return (
@@ -13,7 +14,7 @@ export default function Websites() {
            <WebsiteCards />
         </div>
       </main>
-      <footer className={styles.footer}></footer>
+      <Footer />
     </div>
   );
 };

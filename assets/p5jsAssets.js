@@ -49,12 +49,12 @@
             imagePath: '/Images/white_flowers.png',
          },
          {
-            link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
-            imagePath: '/Images/bevel_goldfish.png',
+            link: "",
+            imagePath: '/Images/IVvP.gif',
          },
          {
-            link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
-            imagePath: '/Images/bevel_goldfish.png',
+            link: "",
+            imagePath: '/Images/IVvP.gif',
          },
          {
             link: "",
@@ -65,12 +65,12 @@
             imagePath: '',
          },
          {
-            link: "/p5js_projects/Bevel_goldfish/single_sketch.html",
-            imagePath: '/Images/bevel_goldfish.png',
+            link: "",
+            imagePath: '/Images/IVvP.gif',
          },
          {
-            link: "https://github.com/Kyle-J-Hilton/p5.js",
-            imagePath: '/Images/Bevel_goldfish.png',
+            link: "",
+            imagePath: '/Images/IVvP.gif',
          },   
     ];
     export default p5jsAssets;

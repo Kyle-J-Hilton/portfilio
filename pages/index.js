@@ -33,11 +33,7 @@ const Home = () => {
                         <h2 className={styles.contactCardTitle}> Contact </h2>
                       </a>
                 </div>
-                <div className={styles.contactCard}>
-                      <a href="/websiteAnalysis" className={styles.contactCardAction}>
-                        <h2 className={styles.contactCardTitle}> Get a free website Analysis </h2>
-                      </a>
-                </div>
+               
                 <div className={styles.contactCard}>
                       <a href="/aboutme" className={styles.contactCardAction}  >
                         <h2 className={styles.contactCardTitle}> More Info </h2>

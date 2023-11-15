@@ -20,12 +20,14 @@ body {
   margin-top: -10%;
   transform-origin: top left;
   transform: rotate(1.4deg);
+  background-image: none !important;
 }
 #id6{
   width: 90%;
   height: 84%;
   margin-left: -22%;
   margin-top: 20%;
+  background-image: none !important;
 
   transform-origin: top left;
   transform: rotate(0.8deg);
@@ -37,6 +39,7 @@ body {
   margin-top: 48%;
   transform-origin: top left;
   transform: rotate(0.6deg);
+ 
 }
 
 #id5 {
@@ -47,6 +50,7 @@ body {
   max-width: 92%;
   transform-origin: top right;
   transform: rotate(-1deg);
+  background-image: none !important;
 }
 #id11 {
   width: 88%;
@@ -56,6 +60,7 @@ body {
   
   transform-origin: top right;
   transform: rotate(-0.5deg);
+  background-image: none !important;
 }
 #id17 {
   width: 90%;
@@ -73,6 +78,7 @@ body {
   margin-left: -2%;
   transform-origin: top right;
   transform: rotate(-0.5deg);
+  background-image: none;
 }
 #id10 {
   width: 74%;
@@ -80,7 +86,7 @@ body {
   max-width: 78%;
   margin-top: 20%;
   margin-left: -1%;
-  
+  background-image: none !important;
   transform-origin: top right;
   transform: rotate(-0.5deg);
 }
@@ -92,6 +98,7 @@ body {
   margin-top: 11%;
   transform-origin: top right;
   transform: rotate(-0.2deg);
+  background-image: none !important;
 }
 #id9 {
   width: 66%;
@@ -99,7 +106,7 @@ body {
   margin-left: -6%;
   max-width: 70%;
   margin-top: 18%;
-  
+  background-image: none !important;
   transform-origin: top right;
   transform: rotate(-0.2deg);
 }
@@ -112,6 +119,7 @@ body {
   max-width: 68%;
   transform-origin: top left;
   transform: rotate(0.3deg);
+  background-image: none !important;
 }
 #id8 {
   width: 65%;
@@ -119,7 +127,7 @@ body {
   margin-left: -10%;
   margin-top: 16%;
   max-width: 68%;
-  
+  background-image: none !important;
   transform-origin: top left;
   transform: rotate(0.5deg);
 }
@@ -141,6 +149,7 @@ body {
   max-width: 68%;
   transform-origin: top left;
   transform: rotate(1deg);
+  background-image: none !important;
 }
 #id7 {
   width: 62%;
@@ -148,7 +157,7 @@ body {
   margin-left: -3%;
   margin-top: 16%;
   max-width: 68%;
-  
+  background-image: none !important;
   transform-origin: top left;
   transform: rotate(1deg);
 }
@@ -160,4 +169,5 @@ body {
   max-width: 69%;
   transform-origin: top left;
   transform: rotate(0.3deg);
+  
 }

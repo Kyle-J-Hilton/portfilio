@@ -39,21 +39,7 @@ let yposS = [];
 
 function setup() {
   createCanvas(1536, 864);
-  //video = createCapture(VIDEO);
-  //video.hide();
-  // poseNet = ml5.poseNet(video, modelLoaded); //machine learning lib
-  // poseNet.on('pose', gotPoses);
-
-  // function gotPoses(poses) {
-
-  //   if (poses.length > 0) { //checking for body parts in camera
-  //     pose = poses[0].pose;
-  //   }
-  // }
-
-  // function modelLoaded() {
-  //   console.log('poseNet ready'); //prints out data when model is ready
-  // }
+ 
 
   for (let j = 0; j < 50; j++) {
     xpos[j] = random(-100, 1450);
@@ -78,15 +64,12 @@ function setup() {
 }
 
 function draw() {
-  //image(video, 0, 0);
   background("black");
 
-  if (pose) {
-    handx = pose.rightWrist.x;
-    handy = pose.rightWrist.y;
-  }
-
+  // Update the positions of the shapes to follow the mouse
   for (let j = 0; j < xpos.length; j++) {
+    xpos[j] = mouseX + random(-10, 10);
+    ypos[j] = mouseY + random(-10, 10);
     swayx[j] = -300 + 1000 * noise(off[j]);
     swayy[j] = -300 + 1000 * noise(offy[j]);
 
@@ -100,7 +83,7 @@ function draw() {
 
 //pink
 
-function petals1(xx, yy) {
+function petals1() {
   for (let i = 0; i < 25; i++) {
     for (let j = 0; j < 2; j++) {
       push();
@@ -135,7 +118,7 @@ function petals1(xx, yy) {
   }
 }
 //blue
-function petals2(xx2, yy2) {
+function petals2() {
   for (let i = 0; i < 25; i++) {
     for (let j = 0; j < 2; j++) {
       push();

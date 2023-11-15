@@ -1,6 +1,6 @@
 html, body {
   margin: 0;
-  padding: 5px;
+
   align-items: center;
   text-align: center;
 }
@@ -10,15 +10,15 @@ canvas {
 
 #one {
   display: block;
-  width:800px;
-  height:600px;
+  width:100vw;
+  height:100vh;
 }
 
 #two {
   display: block;
   margin-top: 10px;
-  width:800px;
-  height:600px;
+  width:100vw;
+  height:100vh;
 }
 
 

@@ -20,9 +20,7 @@ const Header = () => {
                 <a href="/aboutme" className={styles.navLink}>
                         Info
                 </a>
-                <a href="/websiteAnalysis" className={styles.navLink}>
-                    Website Analysis
-                </a>
+                
                 <a href="/websites" className={styles.navLink}>
                         Websites
                 </a>

@@ -36,38 +36,24 @@ function draw() {
     fill(rcolor[i], gcolor[i], bcolor[i]);
 
     textSize(t);
-    text("SAVE", xpos[i], ypos[i] + 1);
-    text("THE", xpos[i], ypos[i] + t);
-    text("TREES", xpos[i], ypos[i] + 2 * t);
-    // text('d',xpos[i],ypos[i]+3*t)
-    // text('d',xpos[i],ypos[i]+4*t)
-    // text('d',xpos[i],ypos[i]+5*t)
-    // text('d',xpos[i],ypos[i]+6*t)
-    // text('d',xpos[i],ypos[i]+7*t)
-    // text('d',xpos[i],ypos[i]+8*t)
-    // text('d',xpos[i],ypos[i]+9*t)
-    // text('d',xpos[i],ypos[i]+10*t)
-    // text('d',xpos[i],ypos[i]+11*t)
-    // text('d',xpos[i],ypos[i]+13*t)
-    // text('d',xpos[i],ypos[i]+14*t)
-    // text('d',xpos[i],ypos[i]+15*t)
-    // text('d',xpos[i],ypos[i]+16*t)
-    // text('d',xpos[i],ypos[i]+17*t)
-    // text('d',xpos[i],ypos[i]+18*t)
-    // text('d',xpos[i],ypos[i]+19*t)
-    // text('d',xpos[i],ypos[i]+20*t)
-    // text('d',xpos[i],ypos[i]+21*t)
-    // text('d',xpos[i],ypos[i]+22*t)
-    // text('d',xpos[i],ypos[i]+23*t)
+    text("KJ HILTON", xpos[i], ypos[i] + 1);
+    text("Software Development", xpos[i], ypos[i] + t);
+    text("$$$$$$$$$$$$", xpos[i], ypos[i] + 2 * t);
+ 
 
     if (ypos[i] > height) {
       ypos[i] = -200;
     }
 
     if (mouseIsPressed) {
-      //raindrops cease then fall again
-
-      ypos[i] = -600;
+      rotate(cos(180));
+      if(rcolor[i] <= 20){
+        rcolor[i] += 150;
+      } else if(rcolor[i] <= 150){
+        rcolor[i] += 150;
+      } else{
+        rcolor[i] -= 150;
+      }
     }
   }
 
@@ -78,11 +64,4 @@ function draw() {
     ypos[i] = ypos[i] + yspeed[i];
   }
 
-  //}
-
-  //function mouseClicked(){ raindrops cease to fall then begin again
-
-  //for (let i = 0; i < xpos.length; i++)
-
-  //ypos[i]=-500
 }

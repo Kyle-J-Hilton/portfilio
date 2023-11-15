@@ -31,3 +31,16 @@
   }
 
  
+  @media (max-width: 710px) {
+
+ 
+  .footer h1 {
+    font-size: 1rem;
+    color: #4f4f4f;
+    font-family: 'PublicPixel';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F1B257;
+    font-weight: 600;
+
+  }
+  }

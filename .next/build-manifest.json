@@ -29,21 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/aboutme": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/aboutme.js"
-    ],
-    "/contact": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/contact.js"
-    ],
-    "/websiteAnalysis": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/websiteAnalysis.js"
     ]
   },
   "ampFirstPages": []

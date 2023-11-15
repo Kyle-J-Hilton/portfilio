@@ -1,8 +1,5 @@
 {
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
-  "/aboutme": "pages/aboutme.js",
-  "/websiteAnalysis": "pages/websiteAnalysis.js",
-  "/contact": "pages/contact.js"
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js"
 }

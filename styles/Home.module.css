@@ -39,18 +39,18 @@
 
   .landing {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
   }
 
   .lowerHalf {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #ffffff;
     display: flex;
     background-image: url('/Images/icons.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   .greeting {
@@ -223,6 +223,27 @@
     text-decoration: none;
   }
   
+  @media (max-width: 710px) {
+    .greeting {
+      width: 70%;
+      margin-left: 7%;
+    }
+  
+  
+    #line1 {
+      font-size: 2.5rem;
+    }
+    #line2 {
+      font-size: 2.5rem;
+    }
+    #line3 {
+      font-size: 2.5rem;
+    }
+  
+    .greeting p {
+      font-size: 1rem;
+    }
+  }
 
 
 

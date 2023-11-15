@@ -97,4 +97,17 @@
     color: #ffffff;
   }
 
- 
+  @media (max-width: 710px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      font-weight: 600;
+      width: 40vw;
+    }
+
+.header {
+  background-color: #1b1b1b6f;
+}
+  }

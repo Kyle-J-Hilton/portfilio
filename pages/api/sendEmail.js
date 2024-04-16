@@ -1,15 +1,16 @@
 / pages/api/sendEmail.js
 import nodemailer from 'nodemailer';
 
+const nodemailer = require('nodemailer');
+
 const transporter = nodemailer.createTransport({
-  // Configure your email transport here, such as SMTP or SendGrid
-  // Example:
-  // service: 'gmail',
-  // auth: {
-  //   user: 'your-email@gmail.com',
-  //   pass: 'your-password',
-  // },
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
 });
+
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {

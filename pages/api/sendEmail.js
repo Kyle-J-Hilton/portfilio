@@ -1,36 +1,42 @@
+/ pages/api/sendEmail.js
 import nodemailer from 'nodemailer';
+
+const transporter = nodemailer.createTransport({
+  // Configure your email transport here, such as SMTP or SendGrid
+  // Example:
+  // service: 'gmail',
+  // auth: {
+  //   user: 'your-email@gmail.com',
+  //   pass: 'your-password',
+  // },
+});
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email, message } = req.body;
+    const { name, email, q1, q2, message } = req.body;
 
-    // Create a transporter
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: 'kylehilton18@gmail.com', 
-        pass: 'Astronaut123!', 
-      },
-    });
-
-    // Define the email options
+    // Compose email
     const mailOptions = {
-      from: 'kylehilton18@gmail.com', 
-      to: 'kylehilton18@gmail.com', 
-      subject: 'New Contact Form Submission',
-      text: `Name: ${name}\nEmail: ${email}\nQuestion1: ${q1}\nQeustion2: ${q2}\nMessage: ${message}`,
+      from: 'your-email@gmail.com',
+      to: 'kylehilton18@gmail.com',
+      subject: 'New message from contact form',
+      html: `
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Question 1: ${q1}</p>
+        <p>Question 2: ${q2}</p>
+        <p>Message: ${message}</p>
+      `,
     };
-    
-    
-    // Send the email
+
     try {
       await transporter.sendMail(mailOptions);
-      res.status(200).json({ success: true });
+      res.status(200).json({ message: 'Message sent successfully!' });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ error: 'Error sending email' });
+      res.status(500).json({ error: 'Failed to send message.' });
     }
   } else {
-    res.status(405).end(); // Method Not Allowed
+    res.status(405).json({ error: 'Method not allowed' });
   }
 }

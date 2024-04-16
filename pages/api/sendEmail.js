@@ -1,4 +1,4 @@
-/ pages/api/sendEmail.js
+
 import nodemailer from 'nodemailer';
 
 const nodemailer = require('nodemailer');

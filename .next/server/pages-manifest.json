@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/api/sendEmail": "pages/api/sendEmail.js",
-  "/contact": "pages/contact.js",
-  "/": "pages/index.js"
-}
+{"/_error":"pages/_error.js","/_app":"pages/_app.js","/aboutme":"pages/aboutme.html","/api/hello":"pages/api/hello.js","/api/sendEmail":"pages/api/sendEmail.js","/gamepage":"pages/gamepage.html","/":"pages/index.html","/contact":"pages/contact.html","/p5js":"pages/p5js.html","/websites":"pages/websites.html","/websiteAnalysis":"pages/websiteAnalysis.html","/_document":"pages/_document.js","/404":"pages/404.html"}

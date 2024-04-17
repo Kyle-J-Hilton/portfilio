@@ -1,4 +1,3 @@
-// Adjusted Contact component
 import React, { useState } from 'react';
 import styles from '../styles/Contact.module.css';
 import Header from '../Components/Header';

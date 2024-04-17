@@ -1,15 +1,14 @@
-
-
-const nodemailer = require('nodemailer');
+require('dotenv').config();
+const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: "smtp.ethereal.email",
+  port: 587,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
 });
-
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
@@ -17,8 +16,8 @@ export default async function handler(req, res) {
 
     // Compose email
     const mailOptions = {
-      from: 'your-email@gmail.com',
-      to: 'kylehilton18@gmail.com',
+      from: '"Your Name" <' + process.env.EMAIL_USER + '>', 
+      to: process.env.EMAIL_MINE,
       subject: 'New message from contact form',
       html: `
         <p>Name: ${name}</p>

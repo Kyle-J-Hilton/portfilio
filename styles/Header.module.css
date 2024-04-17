@@ -97,6 +97,10 @@
     color: rgb(255, 255, 255);
   }
 
+  .hideOnMobile {
+    display: none;
+  }
+
   @media (max-width: 710px) {
     .nav {
       display: flex;
@@ -107,7 +111,11 @@
       width: 40vw;
     }
 
-.header {
-  background-color: #1b1b1b6f;
-}
+    .header {
+      background-color: #1b1b1b6f;
+    }
+
+    .starcontainer {
+      display: none;
+    }
   }

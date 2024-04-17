@@ -76,7 +76,7 @@
   }
 
   .list{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #F1B257;
     font-family: 'Impact', 'Haettenschweiler', 'PublicPixel';
     -webkit-text-stroke-width: 1px;
@@ -111,6 +111,9 @@
   }
 
 
+  @media (max-width: 710px) {
+
+  }
 
 
 

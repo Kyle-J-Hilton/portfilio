@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Header.module.css";
 
 const Header = () => {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 600);
+        };
+
+        // Initial check on mount
+        handleResize();
+
+        // Event listener for window resize
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
 
     return (
         <div className={styles.header}>
@@ -24,11 +44,11 @@ const Header = () => {
                 <a href="/websites" className={styles.navLink}>
                         Websites
                 </a>
-                <a href="/gamepage" className={styles.navLink}>
-                        Games
+                <a href="/gamepage" className={`${isMobile ? styles.hideOnMobile : styles.navLink}`}>
+                    Games
                 </a>
-                <a href="/p5js" className={styles.navLink}>
-                        Visuals
+                <a href="/p5js" className={`${isMobile ? styles.hideOnMobile : styles.navLink}`}>
+                    Visuals
                 </a>
             </div>
             

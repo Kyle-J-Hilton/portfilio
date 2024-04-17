@@ -1,6 +1,6 @@
 
 
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef } from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer"
 import GameCard from "../Components/GameCard";

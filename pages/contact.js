@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 import { DiGithubBadge } from 'react-icons/di';
 import { FaLinkedin } from 'react-icons/fa';
 
-const FORM_API_ENDPOINT = 'https://www.kyle-j-hilton.com/api/sendEmail';
+const FORM_API_ENDPOINT = '/api/sendEmail';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

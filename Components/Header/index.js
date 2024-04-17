@@ -10,10 +10,10 @@ const Header = () => {
             setIsMobile(window.innerWidth < 600);
         };
 
-        // Initial check on mount
+       
         handleResize();
 
-        // Event listener for window resize
+       
         window.addEventListener("resize", handleResize);
 
         // Cleanup

@@ -14,11 +14,29 @@ const Home = () => {
   return (
     <div className={styles.scrollContainer} >
       <Head>
-        <title>Kyle Hilton Portfolio</title>
+        <title>KJ Hilton Software Development</title>
         <meta name="description" content="Fully Customized Websites and Apps Everyone will Love. Need a website or app that stands out and performs at the highest level? I can help you reach your tech goals with captivating and user-friendly software development techniques." />
         <meta name="keywords" content="Kyle Hilton, Portfolio, Web Development, Mobile Development, Software Development, Custom Websites, Custom Apps" />
         <meta name="author" content="Kyle Hilton" />
         <link rel="icon" href="/favicon.png" />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "KJ Hilton Software Development",
+              "url": "https://www.kyle-j-hilton.com/",
+              "logo": "https://www.kyle-j-hilton.com/favicon.png",
+              "description": "Fully Customized Websites and Apps Everyone will Love. Need a website or app that stands out and performs at the highest level? I can help you reach your tech goals with captivating and user-friendly software development techniques.",
+            
+              "sameAs": [
+                "https://www.linkedin.com/in/kyle-hilton-27a1b2199/"
+              ]
+            }
+          `}
+        </script>
+
       </Head>
       <main className={styles.main}>
           <Header />

@@ -16,9 +16,9 @@ export default async function handler(req, res) {
 
     // Compose email
     const mailOptions = {
-      from: '"Your Name" <' + process.env.EMAIL_USER + '>', 
-      to: process.env.EMAIL_MINE,
-      subject: 'New message from contact form',
+      from: '"Kyle Hilton" ' + process.env.EMAIL_USER, 
+      to: process.env.EMAIL_USER,
+      subject: 'New message from Portfolio Website',
       html: `
         <p>Name: ${name}</p>
         <p>Email: ${email}</p>

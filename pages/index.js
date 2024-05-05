@@ -41,7 +41,7 @@ const Home = () => {
       <main className={styles.main}>
           <Header />
         <Landing />
-        <HomeLowerHalf />
+        
         <Footer />
       </main>
      
